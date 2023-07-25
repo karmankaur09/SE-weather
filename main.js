@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function that fetches and displays the data from the weather API
     function fetchWeatherData() {
       const apiKey = 'e19df1ddbd3a4dafa3a123613232007';
-      fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityInput}`)
+      fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityInput}`)
         .then(response => response.json())
         .then(data => {
           // You can console log the data to see what is available
